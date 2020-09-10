@@ -1,1 +1,5 @@
-index js file
+var inquirer = require('inquirer');
+inquirer
+    .prompt( [
+        
+    ])
