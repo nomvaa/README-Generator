@@ -62,19 +62,29 @@ function generateHTML(answers) {
     <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">${answers.title}</h1>
-      <ul class="list-group>
-      <li class="list-group-item">Table of Contents</li>
+      <h3>Table of Contents</h3>
+      <ul class="list-group">
       <li class="list-group-item">Installation</li>
         <li class="list-group-item">Usage</li>
         <li class="list-group-item">Contribution</li>
         <li class="list-group-item">License</li>
         <li class="list-group-item">Test</li>
       </ul>
-      <p class="lead">Installation: ${answers.installation}</p>
-      <p class="lead">Usage: ${answers.usage}</p>
-      <p class="lead">Credits: ${answers.contribution}</p>
-      <p class="lead">License: ${answers.license}</p>
-      <p class="lead">Tests: ${answers.test}</p>
+      <h3>Installation</h3>
+      <ul class="list-group">
+      <li class="list-group-item">${answers.installation}</li>
+      <h3>Usage</h3>
+      <ul class="list-group">
+      <li class="list-group-item">${answers.usage}</li>
+      <h3>Contribution</h3>
+      <ul class="list-group">
+      <li class="list-group-item">${answers.contribution}</li>
+      <h3>Licenses</h3>
+      <ul class="list-group">
+      <li class="list-group-item">${answers.license}</li>
+      <h3>Tests</h3>
+      <ul class="list-group">
+      <li class="list-group-item">${answers.test}</li>
       <h3>Contact <span class="badge badge-secondary">Me</span></h3>
       <ul class="list-group">
         <li class="list-group-item">My GitHub address is ${answers.github}</li>
@@ -98,5 +108,4 @@ promptUser()
   .catch(function(err) {
     console.log(err);
   });
-
 
