@@ -100,28 +100,3 @@ promptUser()
   });
 
 
-// // function to write README file
-// function writeToFile(fileName, data) {
-// }
-
-// // function to initialize program
-// function init() {
-//     inquirer.prompt(questions)
-//     .then((inquirerResponse, data) => {
-//         console.log("Making READMe");
-//         fs.writeFileSync("ReadME.md", inquirerResponse, data);
-//     })
-//     .catch((err) => {
-//         console.log(err);
-//     })
-// }
-
-// // function call to initialize program
-// init();
-
-// const userName = questions.userName
-
-// axios.get(`https://api.github.com/users/${userName}`)
-// .then(questions => {
-//     console.log(questions.data);
-// });
