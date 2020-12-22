@@ -1,39 +1,36 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(response) {
+  return `# ${response.title}
 
   # Table of Contents
-  -[description](#description)
-  -[installation](#installation)
-  -[usage](#usage)
-  -[licenses](#licenses)
-  -[contribution](#contribution)
-  -[test](#test)
-  -[username](#username)
-  
-  ${response.username}
-  ##username:
-  
-      ${response.description}
-  ##description:
-  
-      ${response.installation}
-  ##installation:
-  
-      ${response.usage}
-  ##usage:
-  
-      ${response.licenses}
-  ##licenses:
-  
-      ${response.contribution}
-  ##contribution:
-  
-      ${response.test}
-  ##test:
-  
-      ${response.email}
-  ##email:
+  -[Description](#description)
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[Licenses](#licenses)
+  -[Contribution](#contribution)
+  -[Test](#test)
+  -[Username](#username)
+
+## Description:
+${response.description}
+
+## Installation:  
+${response.installation}
+
+# Usage:  
+${response.usage}
+
+# Licenses:  
+${response.licenses}
+
+# Contribution  
+${response.contribution}
+
+## Test:  
+${response.tests}
+
+# Email:  
+${response.email}
 
   `;
   }
